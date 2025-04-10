@@ -35,6 +35,16 @@ body {
   margin-bottom: 20px;
 }
 
+.content-section ul {
+  text-align: left; /* Align the list to the left */
+  margin-left: 20px; /* Add some left margin for spacing */
+  padding-left: 20px; /* Add padding for better readability */
+}
+
+.content-section li {
+  margin-bottom: 10px; /* Add spacing between list items */
+}
+
 .navigation-buttons {
   display: flex;
   justify-content: space-between;
