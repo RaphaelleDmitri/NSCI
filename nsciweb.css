@@ -1,0 +1,424 @@
+
+
+
+* {
+  font-family: "Poppins", sans-serif; /* Use Poppins font */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hero-content {
+  min-width: 100%; /* Each slide takes up the full width of the viewport */
+  height: 100vh; /* Full viewport height */
+  border-bottom: 3rem solid #4a6b4f; /* Add a green border between sections */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's dimensions */
+}
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4a6b4f; /* Background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above everything else */
+}
+
+.hero-content {
+  min-height: 100vh; /* Ensure each section takes up the full viewport height */
+  display: block; /* Ensure sections are visible */
+}
+
+
+body {
+  overflow-y: scroll; /* Ensure vertical scrolling is enabled */
+  scrollbar-width: none; /* For Firefox: hide scrollbar */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge: hide scrollbar */
+}
+
+body, html {
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  font-size: 16px; /* Set a default font size */
+  height: 100%;
+  scroll-behavior: smooth; /* Smooth scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+}
+/* Import Google Font */
+
+/* Navbar styles */
+.navbar {
+  position: fixed; /* Always visible at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Separate logo and links */
+  padding: 10px 30px; /* Adjust padding */
+  background: none; /* Remove background from the entire navbar */
+}
+
+.navbar .navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: rgba(74, 107, 79, 0.8); /* Add background only to the content */
+  padding: 10px 20px;
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* Add spacing between links */
+}
+
+.nav-links a {
+  text-decoration: none; /* Remove default underline */
+  color: black; /* Default color for nav links */
+  font-weight: normal;
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth hover effect */
+  font-family: "Poppins", sans-serif; /* Use Poppins font */
+  font-size: 1.2rem;
+  border-bottom: 2px solid transparent; /* Add an invisible underline */
+  border-bottom: 2px solid black; /* Add a visible underline on hover */
+}
+
+.nav-links a:hover {
+  color: white; /* Change color on hover */
+  border-bottom: 2px solid white; /* Add a visible underline on hover */
+}
+
+
+#atomCanvas {
+  overflow:hidden;
+  width: 100%; /* Adjust the width */
+  height: 80vh; /* Adjust the height */
+  border: 5px solid #4a6b4f(255, 255, 255, 1); /* Optional: Add a subtle border */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 6px #4a6b4f(0, 0, 0, 1); /* Optional: Add a shadow */
+  background-color: black;
+
+}
+
+.slider {
+  display: flex;
+  overflow: hidden; /* Hide content outside the slider */
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  position: relative;
+}
+
+
+.hero-content {
+  position: relative;
+  min-width: 100%; /* Each slide takes up the full width of the viewport */
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  box-sizing: border-box;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+  transition: transform 0.5s ease-in-out; /* Smooth sliding animation */
+}
+.hero-content:first-of-type {
+  justify-content: flex-end; /* Align content to the bottom */
+  text-align: center; /* Center-align the text */
+  padding: 20px; /* Add padding around the text */
+}
+
+.hero-content:first-of-type h1,
+.hero-content:first-of-type p {
+  margin: 0 auto; /* Center the text horizontally */
+  text-indent: 0; /* Remove text indent */
+  line-height: 1.8; /* Adjust line spacing for better readability */
+  font: "Montserrat", sans-serif; /* Use Montserrat font */
+  font-weight: 700; /* Bold font weight for emphasis */
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+/* Navigation buttons */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-btn {
+  left: 10px;
+}
+
+.right-btn {
+  right: 10px;
+}
+
+.slider-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Side-by-side container for slide6 */
+.side-by-side-container {
+  display: flex;
+  justify-content: space-between; /* Add space between the two sections */
+  align-items: flex-start; /* Align items at the top */
+  gap: 300px; /* Add spacing between the sections */
+  padding: 20px;
+  
+}
+.side-by-side-container {
+  flex-direction: column; /* Stack Reflection and About Us vertically */
+  gap: 10px;
+}
+
+.reflection, .about-us {
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+
+.reflection h1, .about-us h1 {
+  font-size: 7rem; /* Adjust heading size */
+  margin-bottom: 10px;
+}
+
+.reflection p, .about-us p {
+  font-size: 3rem; /* Adjust paragraph size */
+  line-height: 1.5; /* Improve readability */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+    font-size: 0.9rem;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+    margin: 0 10px;
+  }
+
+  .hero-content {
+    padding: 15px;
+  }
+
+  .side-by-side-container {
+    flex-direction: column; /* Stack Reflection and About Us vertically */
+    gap: 20px;
+  }
+}
+
+.slide-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4a6b4f; /* Button background color */
+  color: white; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.slide-button:hover {
+  background-color: #3a5b3f; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
+    font-size: 0.8rem;
+  }
+
+  .nav-links a {
+    font-size: 0.7rem;
+    margin: 0 5px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .side-by-side-container {
+    flex-direction: column; /* Stack Reflection and About Us vertically */
+    gap: 10px;
+  }
+
+  .reflection, .about-us {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+
+#slide2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#slide2 .circle-container {
+  position: relative;
+  width: 95rem; /* Adjust the size of the circle */
+  height: 60rem; /* Adjust the size of the circle */
+  
+  overflow: hidden; /* Clip the content to the circle */
+  background: url('images/slide2png.jpg') no-repeat center;
+  background-size: cover;
+  border: 1rem solid #4a6b4f; /* Add a green border around the circle */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Add padding inside the circle */
+  z-index: 0; /* Place it behind the text */
+}
+
+#slide2 .circle-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.25); /* Semi-transparent white overlay */
+  
+  z-index: 1; /* Place it above the image but below the text */
+}
+
+#slide2 .circle-container h1 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a light shadow for contrast */
+  position: relative;
+  z-index: 2; /* Ensure the text is above the overlay */
+  margin: 0;
+  margin-top: -75px;
+  margin-bottom: 35px;
+  padding: 10px 0; /* Add spacing above and below the heading */
+  color: black; /* Ensure the text is readable */
+  font-size: 5rem; /* Adjust font size as needed */
+  text-align: center;
+}
+
+#slide2 .circle-container p {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a light shadow for contrast */
+  position: relative;
+  z-index: 2; /* Ensure the text is above the overlay */
+  margin: 0;
+  padding: 10px 0; /* Add spacing above and below the paragraph */
+  color: black; /* Ensure the text is readable */
+  font-size: 1.5rem; /* Adjust font size as needed */
+  line-height: 2; /* Improve readability */
+  text-align: center;
+  overflow-wrap: break-word; /* Ensure long words break properly */
+}
+
+#slide1 h1{
+  margin-bottom:-30px;
+}
+
+
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4a6b4f; /* Background color */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  z-index: 1000; /* Ensure it appears above everything else */
+}
+
+#loading-screen .logo img:first-child {
+  margin-bottom: 10px; /* Add spacing between the logo and the title */
+}
+
+#loading-screen .logo h1 {
+
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  font-size: 1.5rem; /* Adjust font size */
+  color: white; /* Text color */
+   /* Add spacing between the title and the loading animation */
+   margin-left: -1.5rem;
+   margin-top: -1rem;
+}
+
+#loading-screen .logo img:last-child {
+  width: 75px; /* Adjust the size of the loading animation */
+  height: 75px;
+  margin-top:-1rem;
+}
+
+#loading-screen .logo {
+  font-size: 1rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4a6b4f; /* Background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above everything else */
+}
+
+.logo img{
+
+  width: 80px;
+  height: 80px;
+  margin-top: -10px;
+  margin-bottom: -20px;
+  margin-left: -20px;
+  }
