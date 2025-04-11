@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Nature Science</title>
+    <link rel="stylesheet" href="MainMenuBottomPart.css" />
+  </head>
+  <body>
+    <div id="loading-screen">
+      <div class="logo">
+        <img src="blacklogo.png" alt="Logo" />
+        <h1>SiyenSaliksik</h1>
+        <img src="loading.gif" alt="Loading" />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="left-panel">
+        <h1 class="left-text">THE</h1>
+      </div>
+      <div class="right-panel">
+        <h1><span class="highlight">PHYSICAL SETTING</span></h1>
+        <p>Awareness/Introduction</p>
+
+        <div class="definition-section">
+          <h2>The Physical setting</h2>
+          <p>
+            The Physical setting in science is about how the Universe and the
+            Earth formed and the processes in it. It includes the composition of
+            the universe, how big it is and how it formed, the earth and its
+            composition, as well as the processes that shaped it, the structure
+            of the matter, the energy transformations, the motion, and the
+            forces of nature.
+          </p>
+        </div>
+        <div class="subtopics-section" style="text-align: center">
+          <h2>SUBTOPICS</h2>
+          <div class="subtopic-buttons" style="text-align: right">
+            <button
+              class="subtopic-button"
+              data-tooltip="Understanding energy transformations in the universe."
+              onclick="location.href='SubTopic/EnergyTransformations/EnergyTransformations.html'"
+            >
+              Energy Transformations <span>&gt;</span>
+            </button>
+            <button
+              class="subtopic-button"
+              data-tooltip="Exploring the forces that govern nature."
+              onclick="location.href='SubTopic/ForcesOfNature/ForcesOfNature.html'"
+            >
+              Forces of Nature <span>&gt;</span>
+            </button>
+            <button
+              class="subtopic-button"
+              data-tooltip="Understanding motion and its principles."
+              onclick="location.href='SubTopic/Motion/Motion.html'"
+            >
+              Motion <span>&gt;</span>
+            </button>
+            <button
+              class="subtopic-button"
+              data-tooltip="Processes that shape the Earth over time."
+              onclick="location.href='SubTopic/ProcessesThatShapeTheEarth/ProcessesThatShapeTheEarth.html'"
+            >
+              Processes that Shape the Earth <span>&gt;</span>
+            </button>
+            <button
+              class="subtopic-button"
+              data-tooltip="Examining the structure of matter."
+              onclick="location.href='SubTopic/StructureOfMatter/StructureOfMatter.html'"
+            >
+              Structure of Matter <span>&gt;</span>
+            </button>
+            <button
+              class="subtopic-button"
+              data-tooltip="Understanding the Earth's composition and features."
+              onclick="location.href='SubTopic/TheEarth/TheEarth.html'"
+            >
+              The Earth <span>&gt;</span>
+            </button>
+            <button
+              class="subtopic-button"
+              data-tooltip="Exploring the universe and its vastness."
+              onclick="location.href='SubTopic/TheUniverse/TheUniverse.html'"
+            >
+              The Universe <span>&gt;</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="published-articles">
+          <h2>Published Articles</h2>
+          <div class="articles-grid">
+            <a
+              href="PublishedArticle/UnderstandingtheChangingPlanet/UnderstandingtheChangingPlanet.html"
+              class="article-card"
+            >
+              <div class="article-image">
+                <img
+                  src="PicturesangVideos/Understanding the Changing Planet.png"
+                  alt="Article Image"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <h3>Understanding the Changing Planet</h3>
+              <p>
+                explores the dynamic changes occurring on Earth due to natural
+                and human-induced factors. development.
+              </p>
+            </a>
+            <a
+              href="PublishedArticle/MentalHealth/MentalHealth.html"
+              class="article-card"
+            >
+              <div class="article-image">
+                <img
+                  src="PicturesangVideos/MentalHealth.png"
+                  alt="Article Image"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <h3 id="environment-mental-health">
+                How Does Your Physical Environment Affect you and Your Mental
+                Health?
+              </h3>
+              <p>
+                Highlights the link between environmental factors and mental
+                health, emphasizing science's role in addressing societal
+                challenges.
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div class="recent-discoveries">
+          <h2>RECENT HAPPENINGS/ CURRENT DISCOVERIES</h2>
+          <div class="discoveries-grid">
+            <a
+              href="Discoveries/CosmicOffSwitch/CosmicOffSwitch.html"
+              class="discovery-item"
+            >
+              <div class="discovery-image">
+                <img
+                  src="PicturesangVideos/DiscoveryImage1.png"
+                  alt="Discovery Image 1"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                  onclick="showImageModal(this.src)"
+                />
+                <img
+                  src="PicturesangVideos/DiscoveryImage2.png"
+                  alt="Discovery Image 2"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                  onclick="showImageModal(this.src)"
+                />
+                <img
+                  src="PicturesangVideos/DiscoveryImage3.png"
+                  alt="Discovery Image 3"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                  onclick="showImageModal(this.src)"
+                />
+              </div>
+              <div class="discovery-text">
+                A Cosmic 'Off Switch': Could the Universe Stop Expanding?
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+          </div>
+        </div>
+
+        <!-- Image Modal -->
+        <div id="image-modal" class="modal" onclick="closeImageModal()">
+          <img id="modal-image" style="max-width: 90%; max-height: 90%" />
+        </div>
+
+        <div class="bottom-section">
+          <h2>Importance</h2>
+          <p>
+            Physical setting provides context and scientific knowledge about the
+            Universe, the Earth and the processes that shape it. It also affects
+            the behavior of humans and improves both their physical and mental
+            health through the natural beauty of the environment. In addition,
+            Physical setting also provides context about the understanding of
+            natural events, processes and phenomena that influence scientific
+            inquiry and also leave an impact in different disciplines such as in
+            environmental science, ecology and urban planning. It also explains
+            how the world is made and creates a beautiful landscape and seascape
+            through natural occurrences and patterns. Physical Setting doesn't
+            only focus on natural events but also how the humans modified the
+            natural phenomenons and events in the world that somehow altered the
+            natural processes and created a man-made landscape and seascape.
+          </p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="PicturesangVideos/NSCI WEBSITE (2).png" alt="Virus Image" />
+      </div>
+    </div>
+    <script src="MainMenuBottom.js"></script>
+  </body>
+</html>
