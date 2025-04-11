@@ -7,6 +7,55 @@
   <link rel="icon" href="images/blacklogo.png" type="image/x-icon">
   <link rel="stylesheet" href="nsciweb.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Responsive styles for smaller screens */
+    @media (max-width: 768px) {
+        .navbar-content {
+            flex-direction: column; /* Stack navbar items vertically */
+            align-items: center; /* Center align items */
+        }
+
+        .nav-links a {
+            display: block; /* Stack links vertically */
+            margin: 10px 0; /* Add spacing between links */
+        }
+
+        .hero-content {
+            padding: 20px; /* Add padding for better spacing */
+        }
+
+        .circle-container {
+            text-align: center; /* Center align text */
+        }
+
+        .slide-button {
+            width: 90%; /* Adjust button width */
+            margin: 10px auto; /* Center buttons */
+        }
+    }
+
+    @media (max-width: 480px) {
+        header h1 {
+            font-size: 1.5rem; /* Reduce header font size */
+        }
+
+        .nav-links a {
+            font-size: 0.9rem; /* Adjust font size for links */
+        }
+
+        .hero-content h1 {
+            font-size: 1.2rem; /* Adjust slide title size */
+        }
+
+        .hero-content p {
+            font-size: 0.9rem; /* Adjust slide content size */
+        }
+
+        .slide-button {
+            font-size: 0.9rem; /* Adjust button font size */
+        }
+    }
+  </style>
 </head>
 <body>
   <div id="loading-screen">
