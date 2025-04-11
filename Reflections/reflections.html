@@ -215,7 +215,7 @@
     </header>
 
     <div class="container">
-        <div class="member" onclick="showPopup('Jahna Erika Lagne', 'What I have learned and discovered on this website is the deep interconnectedness of science, the environment, and human well-being. Science helps us understand the world, from the smallest cell to the vast universe, and how we can make better choices for ourselves and the planet.  Understanding how things work, like the flow of energy and the importance of biodiversity, is key to making good decisions.  We need to appreciate the natural world and how our actions affect it, both positively and negatively. Its all about making informed decisions based on a solid understanding of science and the environment.')">
+        <div class="member" onclick="showPopup(event, 'Jahna Erika Lagne', 'What I have learned and discovered on this website is the deep interconnectedness of science, the environment, and human well-being. Science helps us understand the world, from the smallest cell to the vast universe, and how we can make better choices for ourselves and the planet.  Understanding how things work, like the flow of energy and the importance of biodiversity, is key to making good decisions.  We need to appreciate the natural world and how our actions affect it, both positively and negatively. Its all about making informed decisions based on a solid understanding of science and the environment.')">
             <img src="/reflectimage/jahna.jpg" alt="Group Member 1">
             <p>Jahna Erika Lagne</p>
             <p>Web Designer</p>
@@ -225,12 +225,12 @@
             <p>Jessa Mae Braga</p>
             <p>Researcher</p>
         </div>
-        <div class="member" onclick="showPopup('Justin Jerrickho Amaguin', 'This is the reflection of Member 3.')">
+        <div class="member" onclick="showPopup('Justin Jerrickho Amaguin', 'Creating a website, I learned a lot, both improving my ability to create it and learning more about science. It allowed me to focus on creativity with how we set up the website to be clear and easy to understand while diving into various scientific concepts. Overall, this project reminded me of the importance of science research, since science is a continuously evolving body of knowledge. It sparked my curiosity even more and')">
             <img src="/reflectimage/justin.jpg" alt="Group Member 3">
             <p>Justin Jerrickho Amaguin</p>
             <p>Developer</p>
         </div>
-        <div class="member" onclick="showPopup('Kurt Dayao', 'This is the reflection of Member 4.')">
+        <div class="member" onclick="showPopup('Kurt Dayao', 'PLACEHOLDER')">
             <img src="/reflectimage/kurt.jpg" alt="Group Member 4">
             <p>Kurt Dayao</p>
             <p>Researcher</p>
@@ -240,7 +240,7 @@
             <p>Moses John Hermosura</p>
             <p>Web Designer</p>
         </div>
-        <div class="member" onclick="showPopup('Raphaelle Dmitri Alabanzas', 'This is the reflection of Member 6.')">
+        <div class="member" onclick="showPopup('Raphaelle Dmitri Alabanzas', 'Building a website about science topics was a valuable experience; it wasnt just about coding or designing pages, it was about creating a platform that could help others learn and appreciate the importance and excitement of science. One of the key lessons I learned from this project was the value of clear communication. Science can be complicated, but a good website can simplify even the most complex ideas. This project also improved my web development, and I learned a handful of things about how to make a website interactive. Overall, the website deepened my appreciation for web development and science in general; it showed me how powerful websites can be in spreading knowledge and simplifying it. ')">
             <img src="/reflectimage/Raph.jpg" alt="Group Member 6">
             <p>Raphaelle Dmitri Alabanzas</p>
             <p>Developer</p>
@@ -277,7 +277,7 @@
     </div>
 
     <script>
-        function showPopup(title, content) {
+        function showPopup(event, title, content) {
             const popup = document.getElementById('popup');
             const overlay = document.getElementById('overlay');
             const activeMember = event.currentTarget;
