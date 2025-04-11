@@ -54,26 +54,31 @@ body, html {
 
 /* Navbar styles */
 .navbar {
-  position: fixed; /* Always visible at the top */
-  top: 0;
+  position: sticky; /* Make the navbar sticky */
+  top: 0; /* Stick to the top of the screen */
   left: 0;
-  width: 100%;
-  z-index: 10;
+  width: 100%; /* Ensure the navbar spans the full width */
+  z-index: 1000; /* Ensure it appears in front of other elements */
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Separate logo and links */
-  padding: 10px 30px; /* Adjust padding */
-  background: none; /* Remove background from the entire navbar */
+  justify-content: space-between;
+  padding: 10px 20px; /* Adjust padding for better spacing */
+  background: #4a6b4f; /* Solid green background */
+  height: 70px; /* Reduce the height of the green background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.navbar:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for interactivity */
 }
 
 .navbar .navbar-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  background: rgba(74, 107, 79, 0.8); /* Add background only to the content */
-  padding: 10px 20px;
-  border-radius: 10px; /* Optional: Add rounded corners */
+  width: 100%; /* Ensure the content spans the full width */
+  padding: 0 10px; /* Reduce padding for smaller content */
+  font-size: 0.9rem; /* Decrease font size */
 }
 
 .nav-links {
@@ -87,7 +92,7 @@ body, html {
   font-weight: normal;
   transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth hover effect */
   font-family: "Poppins", sans-serif; /* Use Poppins font */
-  font-size: 1.2rem;
+  font-size: 1rem; /* Reduce font size for nav links */
   border-bottom: 2px solid transparent; /* Add an invisible underline */
   border-bottom: 2px solid black; /* Add a visible underline on hover */
 }
@@ -411,8 +416,8 @@ body, html {
 
 .logo img{
 
-  width: 80px;
-  height: 80px;
+  width: 65px; /* Slightly reduce the logo size */
+  height: 65px;
   margin-top: -10px;
   margin-bottom: -20px;
   margin-left: -20px;
