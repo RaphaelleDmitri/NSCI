@@ -254,6 +254,7 @@ body, html {
   font-weight: 600;
   border-radius: 5px; /* Rounded corners */
   transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  z-index: 100000;
 }
 
 .slide-button:hover {
@@ -440,7 +441,7 @@ body, html {
     height: 60rem; /* Adjust the size of the circle */
     
     overflow: hidden; /* Clip the content to the circle */
-    background: url('images/NSCI\ WEBSITE.jpg') no-repeat center;
+    background: url('images/slide2png.jpg') no-repeat center;
     background-size: cover;
     border: 1rem solid #4a6b4f; /* Add a green border around the circle */
     display: flex;
