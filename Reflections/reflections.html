@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Reflections</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9e7b8;
+            color: #4a6b4f;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4a6b4f;
+            color: #f9e7b8;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .member {
+            position: relative; /* Required for animation */
+            border: 2px solid #4a6b4f;
+            border-radius: 15px;
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            width: 250px; /* Increased width for card-like appearance */
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for card effect */
+            transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease; /* Smooth hover effect and added opacity transition */
+            cursor: pointer;
+        }
+
+        .member.animate {
+            position: fixed; /* Move to fixed position for animation */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1.1); /* Center and slightly enlarge */
+            z-index: 1001; /* Ensure it appears above other elements */
+            opacity: 1; /* Fully visible */
+            transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth animation */
+        }
+
+        .member.hidden {
+            opacity: 0; /* Fade out the card */
+            pointer-events: none; /* Disable interaction */
+        }
+
+        .member:hover {
+            transform: translateY(-10px); /* Lift effect on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+        }
+
+        .member img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8); /* Start with smaller scale */
+            background-color: #ffffff;
+            border: 2px solid #4a6b4f;
+            border-radius: 10px;
+            padding: 20px;
+            z-index: 1000;
+            width: 80%;
+            max-width: 500px;
+            opacity: 0; /* Start with opacity 0 */
+            transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.5s ease; /* Smooth bounce animation */
+        }
+
+        .popup.show {
+            display: block;
+            transform: translate(-50%, -50%) scale(1); /* Scale to full size */
+            opacity: 1; /* Fully visible */
+        }
+
+        .popup h2 {
+            margin-top: 0;
+        }
+
+        .popup button {
+            background-color: #4a6b4f;
+            color: #f9e7b8;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup button:hover {
+            background-color: #3b573e;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0; /* Start with opacity 0 */
+            transition: opacity 0.5s ease; /* Smooth fade-in effect */
+        }
+
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #4a6b4f;
+            color: #f9e7b8;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            width: 150px;
+            text-align: center;
+        }
+        
+        .overlay.show {
+            display: block;
+            opacity: 1; /* Fully visible */
+        }
+
+        .back-button:hover {
+            background-color: #3b573e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Group Reflections</h1>
+    </header>
+
+    <div class="container">
+        <div class="member" onclick="showPopup('Jahna Erika Lagne', 'What I have learned and discovered on this website is the deep interconnectedness of science, the environment, and human well-being. Science helps us understand the world, from the smallest cell to the vast universe, and how we can make better choices for ourselves and the planet.  Understanding how things work, like the flow of energy and the importance of biodiversity, is key to making good decisions.  We need to appreciate the natural world and how our actions affect it, both positively and negatively. Its all about making informed decisions based on a solid understanding of science and the environment.')">
+            <img src="/reflectimage/jahna.jpg" alt="Group Member 1">
+            <p>Jahna Erika Lagne</p>
+            <p>Web Designer</p>
+        </div>
+        <div class="member" onclick="showPopup('Jessa Mae Braga', 'I learned that Science is everywhere. It covers a lot of things, from the universe to the tiniest particles. It investigates, inquires, and describes the processes that exist, may it be here on Earth or outside. However, Science cannot answer all questions and cannot explain all events. There are things that remain a mystery. Despite those limitations, science plays a crucial role in the discovery of things and to the development of society. It also gives convenience, awareness, and safety to us. Therefore, we should give importance to science.')">
+            <img src="/reflectimage/jessa.jpg" alt="Group Member 2">
+            <p>Jessa Mae Braga</p>
+            <p>Researcher</p>
+        </div>
+        <div class="member" onclick="showPopup('Justin Jerrickho Amaguin', 'This is the reflection of Member 3.')">
+            <img src="/reflectimage/justin.jpg" alt="Group Member 3">
+            <p>Justin Jerrickho Amaguin</p>
+            <p>Developer</p>
+        </div>
+        <div class="member" onclick="showPopup('Kurt Dayao', 'This is the reflection of Member 4.')">
+            <img src="/reflectimage/kurt.jpg" alt="Group Member 4">
+            <p>Kurt Dayao</p>
+            <p>Researcher</p>
+        </div>
+        <div class="member" onclick="showPopup('Moses John Hermosura', 'I already knew that science is interconnected, however, reading through our website made me appreciate science a little bit more. Learning about discoveries like the new Aptamer-based test and the Chironex yamaguchii sparked my curiosity about things that have yet to be discovered. This website reminded me that there is always more to learn and reignited the sense of wonder I had as someone who once wanted to explore outer space.')">
+            <img src="/reflectimage/moses.jpg" alt="Group Member 5">
+            <p>Moses John Hermosura</p>
+            <p>Web Designer</p>
+        </div>
+        <div class="member" onclick="showPopup('Raphaelle Dmitri Alabanzas', 'This is the reflection of Member 6.')">
+            <img src="/reflectimage/Raph.jpg" alt="Group Member 6">
+            <p>Raphaelle Dmitri Alabanzas</p>
+            <p>Developer</p>
+        </div>
+        <div class="member" onclick="showPopup('Ric Christian Bocatija', 'My exploration into scientific methods revealed that science extends beyond formal education since it really represents both a mental approach and a specific lens for understanding with curiosity and wonder. The captivating thing about science is that it provides solutions which require effort due to their unforeseen nature. It journeys into unfamiliar territory by expanding limits and transforming itself through investigative processes and unsuccessful trials. The fundamental principle of science involves asking relevant questions rather than obtaining full answers. Science exists in both major scientific breakthroughs and minor unnoticed occurrences including plant development and weather pattern modifications as well as product operational mechanisms. The simple encounters with science which occur daily show that our world exists because of logical evidence-based exploration. Through its search for understanding science helps people discover the importance of continuous exploration alongside the desire to stay curious. The scientific approach serves our world by helping us better grasp our environment at the same time as developing it. I consider science to be an essential necessity rather than an important factor in my life.')">        
+            <img src="/reflectimage/Ric.jpg" alt="Group Member 7">
+            <p>Ric Christian Bocatija</p>
+            <p>Web Designer</p>
+        </div>
+        <div class="member" onclick="showPopup('Heart Echalico', 'I have learned that science is an integral part of our everyday life. It is, indeed, not confined to laboratories or academic settings but envelops us in the most ordinary things of our lives. Science explains natural phenomena and serves as the engine of innovations that make our lives better, be it through the technologies used in our smartphones or through the medicines that keep us healthy. Nonetheless, science is not static; it continuously evolves through a process of inquiry and evidence-based discoveries. While some mysteries remain unsolved, science pushes the boundaries of knowledge and advances societal progress. It is imperative that we recognize the importance of science as a means to inspire curiosity and creativity in our understanding of the world around us, as much as in its application to solving human problems.')">
+            <img src="/reflectimage/heart.png" alt="Group Member 8">
+            <p>Heart Echalico</p>
+            <p>Researcher</p>
+        </div>
+        <div class="member" onclick="showPopup('Jesse Antoine Tacluyan', 'What I learned from this website is that science is a field with many sides and dynamic processes that will continue to evolve through evidence based inquiry. It shows us that science is a broad spectrum of fundamental principles and laws that impact our understanding of scientific discoveries and our ideas of the universe and living organisms. The biggest takeaway is that scientific knowledge is not static and is ever changing. We test ideas and embrace creativity, being always open to new evidence that may shape our existing views.')">
+            <img src="/reflectimage/jesse.jpg" alt="Group Member 9">
+            <p>Jesse Antoine Tacluyan</p>
+            <p>Web Designer</p>
+        </div>
+        <div class="member" onclick="showPopup('Carlo Jay Degala', 'I learned that science is a powerful tool that helps us understand the world and improve our lives through discovery and innovation, but it is also a complex and imperfect process. It involves trial and error, constant questioning, and sometimes slow progress, yet it teaches us the value of curiosity, critical thinking, and evidence-based reasoning. It involves trial and error, constant questioning, and sometimes slow progress, yet it teaches us the value of curiosity, critical thinking, and evidence-based reasoning. Its impact on society is undeniable, and embracing the scientific mindset is essential in facing global challenges and making informed decisions in our everyday lives.')">
+            <img src="/reflectimage/carlo.jpg" alt="Group Member 10">
+            <p>Carlo Jay Degala</p>
+            <p>Web Designer</p>
+        </div>
+    </div>
+
+    <a href="../index.html" class="back-button">Back to Main Page</a>
+
+    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+    <div class="popup" id="popup">
+        <h2 id="popup-title"></h2>
+        <p id="popup-content"></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <script>
+        function showPopup(title, content) {
+            const popup = document.getElementById('popup');
+            const overlay = document.getElementById('overlay');
+            const activeMember = event.currentTarget;
+
+            // Animate the clicked card
+            activeMember.classList.add('animate');
+            setTimeout(() => {
+                activeMember.classList.add('hidden'); // Hide after animation
+
+                // Show the popup after the animation finishes
+                document.getElementById('popup-title').innerText = title;
+                document.getElementById('popup-content').innerText = content;
+                popup.classList.add('show');
+                overlay.classList.add('show');
+            }, 500); // Match the animation duration
+        }
+
+        function closePopup() {
+            const popup = document.getElementById('popup');
+            const overlay = document.getElementById('overlay');
+            const animatedMember = document.querySelector('.member.animate');
+
+            // Hide the popup
+            popup.classList.remove('show');
+            overlay.classList.remove('show');
+
+            // Reset the animated card
+            if (animatedMember) {
+                animatedMember.classList.remove('animate', 'hidden');
+            }
+        }
+    </script>
+</body>
+</html>
