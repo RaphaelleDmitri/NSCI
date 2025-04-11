@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group Reflections</title>
+    <link rel="icon" href="blacklogo.png" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -141,10 +142,75 @@
         .back-button:hover {
             background-color: #3b573e;
         }
+
+        #loading-screen .logo {
+  font-size: 2rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4a6b4f; /* Background color */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  z-index: 1000; /* Ensure it appears above everything else */
+}
+
+#loading-screen .logo img:first-child {
+  margin-bottom: 10px; /* Add spacing between the logo and the title */
+}
+
+#loading-screen .logo h1 {
+
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  font-size: 1.5rem; /* Adjust font size */
+  color: white; /* Text color */
+   /* Add spacing between the title and the loading animation */
+   margin-left: -1.5rem;
+   margin-top: -1rem;
+}
+
+#loading-screen .logo img:last-child {
+  width: 75px; /* Adjust the size of the loading animation */
+  height: 75px;
+  margin-top:-1rem;
+}
+
+.logo img{
+
+  width: 80px;
+  height: 80px;
+  margin-top: -10px;
+  margin-bottom: -20px;
+  margin-left: -20px;
+  }           
+
+
+
+
+
     </style>
 </head>
 <body>
     <header>
+        
+<div id="loading-screen">
+    <div class="logo">
+      <img src="blacklogo.png" alt="Logo" />
+      <h1>SiyenSaliksik</h1>
+      <img src="loading.gif" alt="Loading" />
+
+    </div>
+  </div>
+
         <h1>Group Reflections</h1>
     </header>
 
@@ -243,6 +309,21 @@
                 animatedMember.classList.remove('animate', 'hidden');
             }
         }
+
+        document.addEventListener("DOMContentLoaded", () => {
+  const loadingScreen = document.getElementById("loading-screen");
+  const mainContent = document.getElementById("main-content");
+
+  // Hide the loading screen after 3 seconds
+  setTimeout(() => {
+    loadingScreen.style.display = "none"; // Hide the loading screen
+    mainContent.style.display = "block"; // Show the main content
+
+    // Run the highlightNavLink function after the main content is displayed
+    highlightNavLink();
+  }, 3000); // 3 seconds
+});
+
     </script>
 </body>
 </html>

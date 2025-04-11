@@ -441,7 +441,7 @@ body, html {
     height: 60rem; /* Adjust the size of the circle */
     
     overflow: hidden; /* Clip the content to the circle */
-    background: url('images/slide2png.jpg') no-repeat center;
+    background: url('cover2.jpg') no-repeat center;
     background-size: cover;
     border: 1rem solid #4a6b4f; /* Add a green border around the circle */
     display: flex;
@@ -478,13 +478,13 @@ body, html {
   }
   
   #slide3 .circle-container p {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a light shadow for contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a light shadow for contrast */
     position: relative;
     z-index: 2; /* Ensure the text is above the overlay */
     margin: 0;
     padding: 10px 0; /* Add spacing above and below the paragraph */
     color: black; /* Ensure the text is readable */
-    font-size: 1.5rem; /* Adjust font size as needed */
+    font-size: 2rem; /* Adjust font size as needed */
     line-height: 2; /* Improve readability */
     text-align: center;
     overflow-wrap: break-word; /* Ensure long words break properly */
@@ -506,7 +506,7 @@ body, html {
     height: 60rem; /* Adjust the size of the circle */
     
     overflow: hidden; /* Clip the content to the circle */
-    background: url('images/NSCI\ WEBSITE\ \(1\).jpg') no-repeat center;
+    background: url('cover1.jpg') no-repeat center;
     background-size: cover;
     border: 1rem solid #4a6b4f; /* Add a green border around the circle */
     display: flex;
@@ -543,13 +543,13 @@ body, html {
   }
   
   #slide4 .circle-container p {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a light shadow for contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a light shadow for contrast */
     position: relative;
     z-index: 2; /* Ensure the text is above the overlay */
     margin: 0;
     padding: 10px 0; /* Add spacing above and below the paragraph */
     color: black; /* Ensure the text is readable */
-    font-size: 1.5rem; /* Adjust font size as needed */
+    font-size: 2rem; /* Adjust font size as needed */
     line-height: 2; /* Improve readability */
     text-align: center;
     overflow-wrap: break-word; /* Ensure long words break properly */
@@ -638,7 +638,7 @@ body, html {
     height: 60rem; /* Adjust the size of the circle */
     
     overflow: hidden; /* Clip the content to the circle */
-    background: url('images/slide2png.jpg') no-repeat center;
+    background: url('cover3.webp') no-repeat center;
     background-size: cover;
     border: 1rem solid #4a6b4f; /* Add a green border around the circle */
     display: flex;
@@ -675,13 +675,13 @@ body, html {
   }
   
   #slide6 .circle-container p {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a light shadow for contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a light shadow for contrast */
     position: relative;
     z-index: 2; /* Ensure the text is above the overlay */
     margin: 0;
     padding: 10px 0; /* Add spacing above and below the paragraph */
     color: black; /* Ensure the text is readable */
-    font-size: 1.5rem; /* Adjust font size as needed */
+    font-size: 2rem; /* Adjust font size as needed */
     line-height: 2; /* Improve readability */
     text-align: center;
     overflow-wrap: break-word; /* Ensure long words break properly */

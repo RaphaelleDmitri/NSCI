@@ -510,3 +510,34 @@ body {
   font-size: 1.2rem;
   margin-bottom: 15px;
 }
+
+
+
+.logo-button-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+
+  height: 100vh; /* Make the container take the full viewport height */
+}
+
+.logo-button {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  
+  width: 100px; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  margin-left: -20rem;
+  margin-top: 1rem;
+
+  background-color:  #f9e7b8 ; /* Green background */
+  color: #4a6b4f; /* Light text color */
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  font-size: 1.2rem; /* Adjust font size */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+  border: none; /* Remove default border */
+  border-radius: 10px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add hover effects */
+}
