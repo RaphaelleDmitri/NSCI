@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Nature Science</title>
+    <link rel="stylesheet" href="LivingEnvironment.css" />
+  </head>
+  <body>
+
+    <div id="loading-screen">
+      <div class="logo">
+        <img src="blacklogo.png" alt="Logo" />
+        <h1>SiyenSaliksik</h1>
+        <img src="loading.gif" alt="Loading" />
+  
+      </div>
+    </div>
+  
+
+
+
+  
+    <div class="container">
+      <div class="left-panel">
+        <div class="logo-button-container">
+          <button class="logo-button" onclick="window.location.href='../index.html'">Go Back</button>
+        </div>
+        <h1 class="left-text">THE</h1>
+        
+      </div>
+      <div class="right-panel">
+        <h1><span class="highlight">LIVING ENVIRONMENT</span></h1>
+        <p>Awareness/Introduction</p>
+
+        <div class="definition-section">
+          <h2>The Living Environment</h2>
+          <p>
+            The living environment is the basic knowledge about how living things function and how they interact with one another and their environment.
+            It is represented by the space in which organisms live and interact with each other or with the non-living environment.
+    <br>
+   The living environment focuses on six major subjects.
+   <br>
+   <br>o   the diversity of life, as reflected in the biological characteristics of the earth's organisms
+   <br>o   the transfer of heritable characteristics from one generation to the next
+   <br>o   the structure and functioning of cells, the basic building blocks of all organisms
+   <br>o   the interdependence of all organisms and their environment
+   <br>o   the flow of matter and energy through the cycles of life
+   <br>o   how biological evolution explains the similarity and diversity of life.
+   
+          </p>
+        </div>
+        
+
+        <div class="published-articles">
+          <h2>Published Articles</h2>
+          <div class="articles-grid">
+            <a href="PublishedArticle/DiversityOfLife/DiversityOfLife.html" class="article-card">
+              <div class="article-image">
+                <img src="LivingEnvironmentPictures/DiversityOfLife.png" alt="Article Image" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <h3>Diversity of Life</h3>
+              <p>This study provides an overview of the status and challenges faced by protected areas (PAs) in the Philippines.</p>
+            </a>
+
+
+
+
+
+            
+            <a href="PublishedArticle/Heridity/Heredity.html" class="article-card">
+              <div class="article-image">
+                <img src="PublishedArticle/Heridity/Heredity.png" alt="Article Image" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <h3>Hereditary</h3>
+              <p>The study explores the genetic history and migration of Filipino ethnic groups by analyzing mitochondrial DNA passed down from mothers.</p>
+            </a>
+
+
+
+
+            
+            <a href="PublishedArticle/FlowOfMatterAndEnergy/FlowOfMatterAndEnergy.html" class="article-card">
+              <div class="article-image">
+                <img src="PublishedArticle/FlowOfMatterAndEnergy/FlowOfMatterAndEnergy.png" alt="Article Image" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <h3>Flow Of Matter and Energy</h3>
+              <p>This article introduces an openly accessible dataset aimed at supporting energy system modelling of decarbonisation pathways in the Philippines.</p>
+            </a>
+
+
+
+
+
+
+
+            <a href="PublishedArticle/InterdependenceOfLife/InterdependenceOfLife.html" class="article-card">
+              <div class="article-image">
+                <img src="PublishedArticle/InterdependenceOfLife/InterdependenceOfLife.png" alt="Article Image" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <h3>interdependence Of Life</h3>
+              <p>This study identifies Key Biodiversity Areas (KBAs) in the Philippines, emphasizing their ecological importance and how species interdependence is crucial for ecosystem stability
+
+              </p>
+            </a>
+
+
+            <a href="PublishedArticle/EvolutionOfLife/EvolutionOfLife.html" class="article-card">
+              <div class="article-image">
+                <img src="PublishedArticle/EvolutionOfLife/EvolutionOfLife.png" alt="Article Image" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <h3>Evolution Of Life</h3>
+              <p>The study focuses on protecting the Philippines' unique plants and animals by looking at how they evolved and where they come from.</p>
+            </a>
+          </div>
+        </div>
+
+
+
+
+        <div class="recent-discoveries">
+          <h2>RECENT HAPPENINGS/ CURRENT DISCOVERIES</h2>
+          <div class="discoveries-grid">
+            <a href="Discoveries/AptamerBasedTest/AptamerBasedTest.html" class="discovery-item">
+              <div class="discovery-image">
+                <img src="Article1.png" alt="Discovery Image 1" style="width: 100%; height: 100%; object-fit: cover;" onclick="showImageModal(this.src)" />
+                
+              </div>
+              <div class="discovery-text"> Legarda pushes for action on ‘triple planetary crisis as 2025 begins.
+              </div>
+            </a>
+
+
+
+            <a href="Discoveries/Article2/Article2.html" class="discovery-item">
+              <div class="discovery-image">
+                <img src="Article2.png" alt="Discovery Image 1" style="width: 100%; height: 100%; object-fit: cover;" onclick="showImageModal(this.src)" />
+              </div>
+              <div class="discovery-text">Measuring mining emissions for a greener future
+              </div>
+            </a>
+
+
+
+            <a href="Discoveries/Article3/Article3.html" class="discovery-item">
+              <div class="discovery-image">
+                <img src="Article3.png" alt="Discovery Image 1" style="width: 100%; height: 100%; object-fit: cover;" onclick="showImageModal(this.src)" />
+              </div>
+            
+            <div class="discovery-text">Research project to unravel genetic basis and epidemiology of XDP in PH
+              </div></a>    
+          </div>  
+        </div>
+
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+          </div>
+        </div>
+
+        <!-- Image Modal -->
+        <div id="image-modal" class="modal" onclick="closeImageModal()">
+          <img id="modal-image" style="max-width: 90%; max-height: 90%;" />
+        </div>
+
+        <div class="bottom-section">
+          <h2>Importance</h2>
+          <p>
+            The living environment is essential for human survival and well-being, providing fundamental services such as clean air, drinking water, food, shelter, biological diversity, and climate regulating services. It focuses on six concepts of ideas:
+            Diversity of Life – which allows ecosystems to be resilient and resources to be available;
+             Heredity – which allows for species to adapt as information is passed on;
+             Flow of Matter and Energy – that allow nutrients and energy to flow through systems to sustain life;
+             Evolution of Life – an explanation for adaptation over time to ever-changing environments; and
+             Interdependence of Life – a reminder that everything requires other things in order to live.
+            In conclusion, the five subjects show the relationship between organisms and their environment. To save various living beings, it is important for people to efficiently use various resources and learn about genes and relations. It will help in the thriving of the biosphere.
+            
+          </p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="LivingEnvironment.webp" alt="Virus Image" />
+      </div>
+    </div>
+    <script src="LivingEnvironment.js"></script>
+  </body>
+</html>

@@ -325,7 +325,7 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.25); /* Semi-transparent white overlay */
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
   
   z-index: 1; /* Place it above the image but below the text */
 }
@@ -344,14 +344,14 @@ body, html {
 }
 
 #slide2 .circle-container p {
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a light shadow for contrast */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a light shadow for contrast */
   position: relative;
   z-index: 2; /* Ensure the text is above the overlay */
   margin: 0;
   padding: 10px 0; /* Add spacing above and below the paragraph */
   color: black; /* Ensure the text is readable */
-  font-size: 1.5rem; /* Adjust font size as needed */
-  line-height: 2; /* Improve readability */
+  font-size: 2rem; /* Adjust font size as needed */
+  line-height: 1.25; /* Improve readability */
   text-align: center;
   overflow-wrap: break-word; /* Ensure long words break properly */
 }
@@ -571,7 +571,7 @@ body, html {
     height: 60rem; /* Adjust the size of the circle */
     
     overflow: hidden; /* Clip the content to the circle */
-    background: url('images/NSCI\ WEBSITE\ \(2\).jpg') no-repeat center;
+    background: url('LivingEnvironment/LivingEnvironment.webp') no-repeat center;
     background-size: cover;
     border: 1rem solid #4a6b4f; /* Add a green border around the circle */
     display: flex;
@@ -589,13 +589,13 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.25); /* Semi-transparent white overlay */
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
     
     z-index: 1; /* Place it above the image but below the text */
   }
   
   #slide5 .circle-container h1 {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a light shadow for contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a light shadow for contrast */
     position: relative;
     z-index: 2; /* Ensure the text is above the overlay */
     margin: 0;
@@ -608,13 +608,13 @@ body, html {
   }
   
   #slide5 .circle-container p {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a light shadow for contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a light shadow for contrast */
     position: relative;
     z-index: 2; /* Ensure the text is above the overlay */
     margin: 0;
     padding: 10px 0; /* Add spacing above and below the paragraph */
     color: black; /* Ensure the text is readable */
-    font-size: 1.5rem; /* Adjust font size as needed */
+    font-size: 2rem; /* Adjust font size as needed */
     line-height: 2; /* Improve readability */
     text-align: center;
     overflow-wrap: break-word; /* Ensure long words break properly */
