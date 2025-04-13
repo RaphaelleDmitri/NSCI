@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 10px;
+  padding: 30px 15px;
   background-color: #f9e7b8;
   margin-left: 13px;
 }
@@ -36,7 +36,7 @@ body {
 .right-panel {
   background-color: #4a6b4f;
   color: #f9e7b8;
-  padding: 30px;
+  padding: 2% 5%;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   width: 100%;
@@ -131,4 +131,12 @@ body {
   border-radius: 10px;
   display: block;
   margin: 0 auto; /* Center the image */
+}
+
+p {
+  text-align: justify;
+}
+
+.caption {
+  text-align: center; /* Ensure captions remain centered */
 }

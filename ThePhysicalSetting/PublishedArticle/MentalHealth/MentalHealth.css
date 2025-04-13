@@ -8,7 +8,7 @@ body {
     background-color: #4f704d; /* Green background */
     color: #fdf5d4; /* Light yellow text */
     margin: 30px 100px; /* Increased margin by 50px */
-    padding: 40px 150px;
+    padding: 40px 100px;
     border-radius: 15px;
     text-align: left; /* Align text to the left */
     margin-bottom: 40px; /* Add spacing below the article */
@@ -16,18 +16,20 @@ body {
     line-height: 1.5;
 }
 
-.article-container p {
-    line-height: 1.5; /* Set line height for paragraphs */
-}
-
 .article-container h1,
 .article-container .subtitle {
     text-align: center; /* Center-align title and link */
 }
 
+.article-container p {
+    line-height: 1.5; /* Set line height for paragraphs */
+    text-align: justify; /* Justify text alignment */
+}
+
 .subtitle {
     font-size: 1rem;
-    margin-top: -15px;
+    margin-top: -25px;
+    text-align: center; /* Ensure subtitle link remains center-aligned */
 }
 
 .subtitle a {
@@ -83,4 +85,5 @@ body {
     font-size: 1rem;
     color: #d6d6d6;
     margin-top: 0px;
+    text-align: center; /* Ensure caption remains center-aligned */
   }

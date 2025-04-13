@@ -16,9 +16,16 @@ body {
     line-height: 1.5;
 }
 
+.article-container p {
+    text-align: justify; /* Justify text alignment */
+}
+
 .subtitle {
     font-size: 1rem;
     margin-top: -15px;
+    text-align: center; /* Center the subtitle */
+    display: flex;
+    justify-content: center;
 }
 
 .subtitle a {
@@ -63,7 +70,7 @@ body {
   
   .image-caption-template img {
     max-width: 50%; /* Make the image smaller */
-    height: auto;
+    height: 30%;
     border: 2px solid #4a6b4f;
     border-radius: 10px;
     display: block;
@@ -74,5 +81,5 @@ body {
     font-size: 1rem;
     color: #d6d6d6;
     margin-top: 0px;
+    text-align: center; /* Center the caption */
   }
-  

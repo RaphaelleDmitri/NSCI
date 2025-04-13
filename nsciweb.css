@@ -6,9 +6,10 @@
 }
 .hero-content {
   min-width: 100%; /* Each slide takes up the full width of the viewport */
-  height: 100vh; /* Full viewport height */
-  border-bottom: 3rem solid #4a6b4f; /* Add a green border between sections */
+  height: 90vh; /* Full viewport height */
   box-sizing: border-box; /* Ensure padding and border are included in the element's dimensions */
+  border-bottom: none; /* Remove the green border at the bottom */
+  text-align: left; /* Align text to the left */
 }
 #loading-screen {
   position: fixed;
@@ -64,8 +65,10 @@ body, html {
   justify-content: space-between;
   padding: 10px 20px; /* Adjust padding for better spacing */
   background: #4a6b4f; /* Solid green background */
-  height: 70px; /* Reduce the height of the green background */
+  height: 68px; /* Reduce the height of the green background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  font-weight: 800; /* Make the text in the header thicker */
+  border-bottom: 4px solid #3a5b3f; /* Add a thicker bottom border */
 }
 
 .navbar:hover {
@@ -89,7 +92,7 @@ body, html {
 .nav-links a {
   text-decoration: none; /* Remove default underline */
   color: black; /* Default color for nav links */
-  font-weight: normal;
+  font-weight: 900; /* Make the navigation links thicker */
   transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth hover effect */
   font-family: "Poppins", sans-serif; /* Use Poppins font */
   font-size: 1rem; /* Reduce font size for nav links */
@@ -133,7 +136,6 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   color: black;
   box-sizing: border-box;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
@@ -149,19 +151,23 @@ body, html {
 .hero-content:first-of-type p {
   margin: 0 auto; /* Center the text horizontally */
   text-indent: 0; /* Remove text indent */
-  line-height: 1.8; /* Adjust line spacing for better readability */
+  line-height: 1.5; /* Adjust line spacing for better readability */
   font: "Montserrat", sans-serif; /* Use Montserrat font */
   font-weight: 700; /* Bold font weight for emphasis */
 }
 
 .hero-content h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 20px;
+  color: black; /* Darker color for better visibility */
+  padding-bottom: 15px;
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 0.8rem;
+  line-height: 1;
+  text-align: left; /* Ensure paragraphs are left-aligned */
+  color: black; /* Slightly lighter color for readability */
 }
 
 
@@ -255,6 +261,9 @@ body, html {
   border-radius: 5px; /* Rounded corners */
   transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
   z-index: 1000000000000;
+  position: absolute; /* Position the button absolutely */
+  bottom: 20px; /* Place it 20px from the bottom */
+  left: 46%; /* Center it horizontally */
 }
 
 .slide-button:hover {
@@ -335,8 +344,7 @@ body, html {
   position: relative;
   z-index: 2; /* Ensure the text is above the overlay */
   margin: 0;
-  margin-top: -75px;
-  margin-bottom: 35px;
+  margin-bottom: 5px;
   padding: 10px 0; /* Add spacing above and below the heading */
   color: black; /* Ensure the text is readable */
   font-size: 5rem; /* Adjust font size as needed */
@@ -347,12 +355,13 @@ body, html {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a light shadow for contrast */
   position: relative;
   z-index: 2; /* Ensure the text is above the overlay */
-  margin: 0;
-  padding: 10px 0; /* Add spacing above and below the paragraph */
+  margin: 10px 10%;
+  padding: 10px 0px; /* Add spacing above and below the paragraph */
   color: black; /* Ensure the text is readable */
-  font-size: 2rem; /* Adjust font size as needed */
-  line-height: 1.25; /* Improve readability */
-  text-align: center;
+  font-size: 1.3rem; /* Adjust font size as needed */
+  line-height: 1.5; /* Improve readability */
+  font-weight: 300;
+  text-align: left;
   overflow-wrap: break-word; /* Ensure long words break properly */
 }
 
@@ -482,11 +491,12 @@ body, html {
     position: relative;
     z-index: 2; /* Ensure the text is above the overlay */
     margin: 0;
-    padding: 10px 0; /* Add spacing above and below the paragraph */
+    padding: 10px 10%; /* Add spacing above and below the paragraph */
     color: black; /* Ensure the text is readable */
     font-size: 2rem; /* Adjust font size as needed */
-    line-height: 2; /* Improve readability */
-    text-align: center;
+    font-weight: 500;
+    line-height: 1.5; /* Improve readability */
+    text-align: left;
     overflow-wrap: break-word; /* Ensure long words break properly */
   }
   
@@ -534,7 +544,7 @@ body, html {
     position: relative;
     z-index: 2; /* Ensure the text is above the overlay */
     margin: 0;
-    margin-top: -75px;
+    margin-top: -35px;
     margin-bottom: 35px;
     padding: 10px 0; /* Add spacing above and below the heading */
     color: black; /* Ensure the text is readable */
@@ -547,11 +557,12 @@ body, html {
     position: relative;
     z-index: 2; /* Ensure the text is above the overlay */
     margin: 0;
-    padding: 10px 0; /* Add spacing above and below the paragraph */
+    padding: 10px 10%; /* Add spacing above and below the paragraph */
     color: black; /* Ensure the text is readable */
     font-size: 2rem; /* Adjust font size as needed */
-    line-height: 2; /* Improve readability */
-    text-align: center;
+    font-weight: 500;
+    line-height: 1.5; /* Improve readability */
+    text-align: left;
     overflow-wrap: break-word; /* Ensure long words break properly */
   }
 
@@ -595,11 +606,11 @@ body, html {
   }
   
   #slide5 .circle-container h1 {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a light shadow for contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a light shadow for contrast */
     position: relative;
     z-index: 2; /* Ensure the text is above the overlay */
     margin: 0;
-    margin-top: -75px;
+    margin-top: -35px;
     margin-bottom: 35px;
     padding: 10px 0; /* Add spacing above and below the heading */
     color: black; /* Ensure the text is readable */
@@ -612,11 +623,12 @@ body, html {
     position: relative;
     z-index: 2; /* Ensure the text is above the overlay */
     margin: 0;
-    padding: 10px 0; /* Add spacing above and below the paragraph */
+    padding: 10px 10%; /* Add spacing above and below the paragraph */
     color: black; /* Ensure the text is readable */
     font-size: 2rem; /* Adjust font size as needed */
-    line-height: 2; /* Improve readability */
-    text-align: center;
+    font-weight: 500;
+    line-height: 1.5; /* Improve readability */
+    text-align: left;
     overflow-wrap: break-word; /* Ensure long words break properly */
   }
 
@@ -666,7 +678,7 @@ body, html {
     position: relative;
     z-index: 2; /* Ensure the text is above the overlay */
     margin: 0;
-    margin-top: -75px;
+    margin-top: -35px;
     margin-bottom: 35px;
     padding: 10px 0; /* Add spacing above and below the heading */
     color: black; /* Ensure the text is readable */
@@ -679,10 +691,12 @@ body, html {
     position: relative;
     z-index: 2; /* Ensure the text is above the overlay */
     margin: 0;
-    padding: 10px 0; /* Add spacing above and below the paragraph */
+    padding: 10px 10%; /* Add spacing above and below the paragraph */
     color: black; /* Ensure the text is readable */
     font-size: 2rem; /* Adjust font size as needed */
-    line-height: 2; /* Improve readability */
-    text-align: center;
+    font-weight: 500;
+    line-height: 1.5; /* Improve readability */
+    text-align: left;
     overflow-wrap: break-word; /* Ensure long words break properly */
   }
+

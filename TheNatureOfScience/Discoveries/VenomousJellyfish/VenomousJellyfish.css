@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f9e7b8; /* Light yellow background */
+  line-height: 1.5; /* Consistent line spacing */
 }
 
 .container {
@@ -35,14 +36,24 @@ body {
   margin-bottom: 20px;
 }
 
+.content-section p {
+  text-align: justify;
+  font-size: 1.2rem; /* Slightly larger font size */
+}
+
 .content-section ul {
-  text-align: left; /* Align the list to the left */
+  text-align: justify;
   margin-left: 20px; /* Add some left margin for spacing */
   padding-left: 20px; /* Add padding for better readability */
 }
 
 .content-section li {
   margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.content-section ul li {
+  text-align: justify;
+  font-size: 1.2rem; /* Match the font size of paragraphs */
 }
 
 .navigation-buttons {
@@ -69,12 +80,18 @@ body {
   transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
-subtitle {
+.subtitle {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Ensure text alignment is centered */
+  margin-bottom: 15px; /* Add spacing below the link */
   font-size: 1rem;
   margin-top: -15px;
 }
 
 .subtitle a {
+  display: inline-block; /* Treat the link as a block-level element */
   color: #e0d3a8; /* Softer yellow to match the color scheme */
   text-decoration: underline;
   font-weight: bold;

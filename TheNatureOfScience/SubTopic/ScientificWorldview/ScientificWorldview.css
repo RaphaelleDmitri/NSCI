@@ -56,23 +56,28 @@ body {
 }
 
 .right-panel main h2 {
-  font-size: 2rem;
+  font-size: 2rem; /* Standardize heading 2 font size */
   margin-bottom: 10px;
 }
 
 .right-panel main h3 {
-  font-size: 1.5rem;
+  font-size: 1.6rem; /* Standardize heading 3 font size */
   margin-bottom: 10px;
 }
 
 .right-panel main p {
-  font-size: 1.4rem;
+  font-size: 1.2rem; /* Standardize paragraph font size */
   line-height: 1.6;
 }
 
 .right-panel main ul {
   margin-left: 20px;
   list-style-type: disc;
+}
+
+.right-panel main ul li {
+  font-size: 1.2rem; /* Match the font size of paragraphs */
+  line-height: 1.6; /* Ensure consistent line height */
 }
 
 .navigation-buttons {

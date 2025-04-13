@@ -14,9 +14,9 @@ body {
 
 .header-image img {
   width: 100%; /* Make the image span the entire width */
-  height: 30vh; /* Set the height to cover only the top part */
+  height: 35vh; /* Set the height to cover only the top part */
   object-fit: cover; /* Ensure the image covers the container */
-  margin: 15px; /* Remove any default margins */
+  margin: 10px; /* Remove any default margins */
   padding: 0; /* Remove any default paddings */
 }
 
@@ -34,6 +34,11 @@ body {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
+}
+
+.content-section p {
+  font-size: 1.3rem; /* Increase font size slightly */
+  text-align: justify; /* Justify text */
 }
 
 .navigation-buttons {
@@ -60,9 +65,10 @@ body {
   transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
-subtitle {
-  font-size: 1rem;
-  margin-top: -15px;
+.subtitle {
+  font-size: 0.8rem;
+  margin-top: -20px;
+  text-align: center; /* Center the subtitle */
 }
 
 .subtitle a {

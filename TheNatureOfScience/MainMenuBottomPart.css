@@ -173,8 +173,8 @@ body {
 }
 
 .definition-content ul li {
-  font-size: 1rem;
-  margin-bottom: 10px;
+  font-size: 1.2rem; /* Match the font size of paragraphs */
+  line-height: 1.6; /* Ensure consistent line height */
 }
 
 .subtopics-section {
@@ -526,8 +526,8 @@ body {
   align-items: center; /* Center vertically */
   
   width: 100px; /* Set a fixed width */
-  height: 50px; /* Set a fixed height */
-  margin-left: -20rem;
+  height: 40px; /* Set a fixed height */
+  margin-left: -11rem;
   margin-top: 1rem;
 
   background-color:  #f9e7b8 ; /* Green background */
@@ -539,5 +539,10 @@ body {
   border: none; /* Remove default border */
   border-radius: 10px; /* Add rounded corners */
   cursor: pointer; /* Change cursor to pointer on hover */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Add hover effects */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+.logo-button:hover {
+  background-color: #f9e6b8e9; /* Slightly lighter background on hover */
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
 }

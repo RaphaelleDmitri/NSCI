@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #fdf5d4; /* Light yellow background */
+    line-height: 1.5; /* Consistent line spacing */
 }
 
 .article-container {
@@ -16,9 +17,19 @@ body {
     line-height: 1.5;
 }
 
-.subtitle {
+.article-container p {
+    text-align: justify;
+}
+
+.article-container ul li {
+    text-align: justify;
+    font-size: 1.2rem; /* Match the font size of paragraphs */
+}
+
+.article-container .subtitle {
     font-size: 1rem;
     margin-top: -15px;
+    text-align: center; /* Center align the link */
 }
 
 .subtitle a {
@@ -26,6 +37,7 @@ body {
     text-decoration: underline;
     font-weight: bold;
     transition: color 0.3s;
+    text-align: center; /* Center align the link */
 }
 
 .subtitle a:hover {
@@ -74,5 +86,5 @@ body {
     font-size: 1rem;
     color: #d6d6d6;
     margin-top: 0px;
+    text-align: center; /* Center align the caption */
   }
-  
